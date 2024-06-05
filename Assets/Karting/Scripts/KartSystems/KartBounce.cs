@@ -49,18 +49,20 @@ namespace KartGame.KartSystems
         void Update()
         {
             // Reset the trigger flag
+           
             if (BounceFlag)
             {
                 BounceFlag = false;
             }
             Vector3 origin = transform.position;
             origin.y += HeightOffset;
-
             for (int i = 0; i < Angles.Length; i++)
             {
                 Vector3 direction = GetDirectionFromAngle(Angles[i], Vector3.up, transform.forward);
 
-                if (Physics.Raycast(origin, direction, out RaycastHit hit, RayDistance, CollisionLayer) && Time.time > resumeTime && !hasCollided && kart.LocalSpeed() > 0)
+                bool raycastHit = Physics.Raycast(origin, direction, out RaycastHit hit, RayDistance, CollisionLayer);
+                
+                if (raycastHit && Time.time > resumeTime && !hasCollided && kart.LocalSpeed() > 0)
                 {
                     // If the hit normal is pointing up, then we don't want to bounce
                     if (Vector3.Dot(hit.normal, Vector3.up) > 0.2f) 

@@ -146,6 +146,7 @@ public class GameFlowManager : MonoBehaviour
             }
 
             if (m_TimeManager.IsFinite && m_TimeManager.IsOver)
+                
                 EndGame(false);
         }
     }
