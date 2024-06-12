@@ -59,7 +59,7 @@
     <UnityVersion>2021.3.37f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Users\Bahod\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.0.1\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Users\Bahod\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.0.2\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Karting\Scripts\FramerateCounter.cs" />
@@ -119,6 +119,7 @@
     <Compile Include="Assets\Karting\Scripts\Objective.cs" />
     <Compile Include="Assets\Karting\Scripts\ArcadeKartPowerup.cs" />
     <Compile Include="Assets\Karting\Scripts\UI\TimerHUDManager.cs" />
+    <Compile Include="Assets\Karting\Scripts\GhostScripts\GhostScript.cs" />
     <Compile Include="Assets\Karting\Scripts\PrefabReplacer.cs" />
     <Compile Include="Assets\Karting\Scripts\KartSystems\KartAnimation\KartPlayerAnimator.cs" />
     <Compile Include="Assets\Karting\Scripts\PrefabReplacerOnInstance.cs" />
@@ -506,16 +507,16 @@
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.2\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="System.IO.Abstractions.TestingHelpers">
-      <HintPath>Library\PackageCache\com.unity.ml-agents@2.0.1\Plugins\System.IO.Abstractions.TestingHelpers.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="ReportGeneratorMerged">
       <HintPath>Library\PackageCache\com.unity.testtools.codecoverage@1.2.5\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System.Interactive.Async">
       <HintPath>Library\PackageCache\com.unity.ml-agents@2.0.1\Plugins\ProtoBuffer\System.Interactive.Async.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IO.Abstractions.TestingHelpers">
+      <HintPath>Library\PackageCache\com.unity.ml-agents@2.0.1\Plugins\System.IO.Abstractions.TestingHelpers.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Grpc.Core">
