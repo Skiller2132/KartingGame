@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//use base cart prefab to create ghost version of car(by creating prefab variant)
 
 public struct GhostTransform
     {
